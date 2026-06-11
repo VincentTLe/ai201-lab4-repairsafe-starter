@@ -39,7 +39,7 @@ Record every interaction — question, safety tier, and response preview — to 
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `"timestamp"` | `str` | ISO 8601 datetime (UTC) — `datetime.utcnow().isoformat() + "Z"` |
+| `"timestamp"` | `str` | ISO 8601 datetime (UTC) — `datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")` |
 | `"tier"` | `str` | Safety tier assigned to this question |
 | `"question"` | `str` | The user's question, truncated to 300 characters |
 | `"response_preview"` | `str` | First 200 characters of the generated response |

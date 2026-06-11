@@ -44,6 +44,8 @@ ai201-lab4-repairsafe-starter/
 ├── responder.py        ← Milestone 2: tier-aware response generator
 ├── auditor.py          ← Milestone 3: audit logger
 ├── config.py           ← constants (API key, model, log path, valid tiers)
+├── data/
+│   └── repair_tiers.md ← tier guide shown in the app's Tier Guide tab
 ├── logs/               ← audit.jsonl written here after Milestone 3
 └── specs/
     ├── system-design.md    ← read this first
